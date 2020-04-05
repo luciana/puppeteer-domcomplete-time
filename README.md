@@ -5,16 +5,19 @@
 ## To Start
 
  ### Setup
- To setup for running this code, install puppeteer by typing this line on the command line:
+ To setup for running this code, install puppeteer by typing this line on the command line. You must have node installed to use this code.
  
  ```
  	npm i puppeteer 
  ```
 
  ### Run 
- To run this code, copy and paste one of these examples in the command line:
+ On the command line, type the command below to run with the default values.
 
- ` node index.js 	#this runs the default values ` 
+  ```
+  node index.js 	#this runs the default values 
+
+  ```
 
 The default values are:
  - URL = http://lucianabruscino.com/
@@ -27,5 +30,10 @@ Specify values for:
 - Repeat: how many times you want to run the test
 
 ### Other Examples
-` URL=https://www.alotofpilates.com repeat=2 node index.js ` 
+
+```
+
+URL=https://www.alotofpilates.com repeat=2 node index.js
+
+```
  
