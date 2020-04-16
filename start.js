@@ -5,7 +5,9 @@ const testPage = require('./test.js');
 
 async function startTest(url, repeat) {
 
-	try{		
+	try{	
+		process.setMaxListeners(Infinity); 
+
 		const browser = await puppeteer.launch({
         	headless: true
     	});
