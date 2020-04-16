@@ -1,8 +1,7 @@
 
-async function testPage(page) {
-  const URL = process.env.URL || 'http://lucianabruscino.com/'; 
+async function testPage(page, url) {
   
-  await page.goto(URL, {waitUntil : 'networkidle2' });
+  await page.goto(url, {waitUntil : 'networkidle2' });
   const performanceTiming = JSON.parse(
     await page.evaluate(() => JSON.stringify(window.performance.timing))
   );

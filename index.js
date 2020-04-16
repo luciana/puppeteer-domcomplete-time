@@ -9,5 +9,5 @@ console.log(" Running ", repeat + " test");
 
 const startTest = require('./start.js');
 for (let i = 0; i < repeat  ; i++) {
-	startTest();
+	startTest(URL, repeat);
 }
